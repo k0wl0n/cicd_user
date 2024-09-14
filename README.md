@@ -1,3 +1,7 @@
+# create ECR repository
+aws ecr create-repository --repository-name ecommerce_user --region ap-southeast-1
+
+
 # setup repository variable on github Actions secrets and variables
 
 https://github.com/<username>>/<app-name>/settings/secrets/actions
