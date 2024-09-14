@@ -55,6 +55,7 @@
             sed -i 's/${{ secrets.REPO_NAME }}\.apps\.kowlon\.my\.id/${{ secrets.REPO_NAME }}-'"${{ env.ENVIRONMENT }}"'.apps.kowlon.my.id/g' deploy/virtual-service.yaml
           
             cat deploy/kustomization.yaml
+            cat deploy/virtual-service.yaml
 
         - name: Pushes to another repository
           uses: cpina/github-action-push-to-another-repository@main
